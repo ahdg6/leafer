@@ -1,0 +1,657 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@leafer/web':
+        specifier: 1.0.0-beta.12
+        version: link:packages/platform/web
+
+  packages/canvas/canvas:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../../debug
+      '@leafer/file':
+        specifier: 1.0.0-beta.12
+        version: link:../../file
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../../list
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../../math
+      '@leafer/path':
+        specifier: 1.0.0-beta.12
+        version: link:../../path
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/canvas/canvas-canvaskit: {}
+
+  packages/canvas/canvas-miniapp:
+    dependencies:
+      '@leafer/canvas':
+        specifier: 1.0.0-beta.12
+        version: link:../canvas
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../../debug
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../../event/event
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/canvas/canvas-node:
+    dependencies:
+      '@leafer/canvas':
+        specifier: 1.0.0-beta.12
+        version: link:../canvas
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/canvas/canvas-web:
+    dependencies:
+      '@leafer/canvas':
+        specifier: 1.0.0-beta.12
+        version: link:../canvas
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../../debug
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../../event/event
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../../math
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/canvas/canvas-worker:
+    dependencies:
+      '@leafer/canvas':
+        specifier: 1.0.0-beta.12
+        version: link:../canvas
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/core:
+    dependencies:
+      '@leafer/canvas':
+        specifier: 1.0.0-beta.12
+        version: link:../canvas/canvas
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/decorator':
+        specifier: 1.0.0-beta.12
+        version: link:../decorator
+      '@leafer/display':
+        specifier: 1.0.0-beta.12
+        version: link:../display
+      '@leafer/display-module':
+        specifier: 1.0.0-beta.12
+        version: link:../display-module
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/event-ui':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event-ui
+      '@leafer/file':
+        specifier: 1.0.0-beta.12
+        version: link:../file
+      '@leafer/helper':
+        specifier: 1.0.0-beta.12
+        version: link:../helper
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image/image
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../list
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+      '@leafer/path':
+        specifier: 1.0.0-beta.12
+        version: link:../path
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+      '@leafer/plugin':
+        specifier: 1.0.0-beta.12
+        version: link:../plugin
+      '@leafer/task':
+        specifier: 1.0.0-beta.12
+        version: link:../task
+
+  packages/data:
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/debug:
+    dependencies:
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/decorator:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/display:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../data
+      '@leafer/decorator':
+        specifier: 1.0.0-beta.12
+        version: link:../decorator
+      '@leafer/display-module':
+        specifier: 1.0.0-beta.12
+        version: link:../display-module
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/helper':
+        specifier: 1.0.0-beta.12
+        version: link:../helper
+      '@leafer/layout':
+        specifier: 1.0.0-beta.12
+        version: link:../layout
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/display-module:
+    dependencies:
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/event/event:
+    dependencies:
+      '@leafer/decorator':
+        specifier: 1.0.0-beta.12
+        version: link:../../decorator
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/event/event-ui:
+    dependencies:
+      '@leafer/decorator':
+        specifier: 1.0.0-beta.12
+        version: link:../../decorator
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../../list
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/file:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/helper:
+    dependencies:
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/image/image:
+    dependencies:
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+      '@leafer/task':
+        specifier: 1.0.0-beta.12
+        version: link:../../task
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/image/image-canvaskit: {}
+
+  packages/image/image-miniapp:
+    dependencies:
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image
+
+  packages/image/image-node:
+    dependencies:
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image
+
+  packages/image/image-web:
+    dependencies:
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image
+
+  packages/image/image-worker:
+    dependencies:
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image
+
+  packages/interaction/interaction:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../../data
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../../event/event
+      '@leafer/event-ui':
+        specifier: 1.0.0-beta.12
+        version: link:../../event/event-ui
+      '@leafer/helper':
+        specifier: 1.0.0-beta.12
+        version: link:../../helper
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../../list
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../../math
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/interaction/interaction-miniapp:
+    dependencies:
+      '@leafer/interaction':
+        specifier: 1.0.0-beta.12
+        version: link:../interaction
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/interaction/interaction-web:
+    dependencies:
+      '@leafer/event-ui':
+        specifier: 1.0.0-beta.12
+        version: link:../../event/event-ui
+      '@leafer/interaction':
+        specifier: 1.0.0-beta.12
+        version: link:../interaction
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/interface: {}
+
+  packages/layout:
+    dependencies:
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/layouter:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/helper':
+        specifier: 1.0.0-beta.12
+        version: link:../helper
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../list
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/list:
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/math:
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/partner:
+    dependencies:
+      '@leafer/layouter':
+        specifier: 1.0.0-beta.12
+        version: link:../layouter
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+      '@leafer/renderer':
+        specifier: 1.0.0-beta.12
+        version: link:../renderer
+      '@leafer/selector':
+        specifier: 1.0.0-beta.12
+        version: link:../selector
+      '@leafer/watcher':
+        specifier: 1.0.0-beta.12
+        version: link:../watcher
+
+  packages/path:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/platform/canvaskit: {}
+
+  packages/platform/miniapp:
+    dependencies:
+      '@leafer/canvas-miniapp':
+        specifier: 1.0.0-beta.12
+        version: link:../../canvas/canvas-miniapp
+      '@leafer/core':
+        specifier: 1.0.0-beta.12
+        version: link:../../core
+      '@leafer/image-miniapp':
+        specifier: 1.0.0-beta.12
+        version: link:../../image/image-miniapp
+      '@leafer/interaction-miniapp':
+        specifier: 1.0.0-beta.12
+        version: link:../../interaction/interaction-miniapp
+      '@leafer/partner':
+        specifier: 1.0.0-beta.12
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/platform/node:
+    dependencies:
+      '@leafer/canvas-node':
+        specifier: 1.0.0-beta.12
+        version: link:../../canvas/canvas-node
+      '@leafer/core':
+        specifier: 1.0.0-beta.12
+        version: link:../../core
+      '@leafer/image-node':
+        specifier: 1.0.0-beta.12
+        version: link:../../image/image-node
+      '@leafer/interaction':
+        specifier: 1.0.0-beta.12
+        version: link:../../interaction/interaction
+      '@leafer/partner':
+        specifier: 1.0.0-beta.12
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+      '@types/node':
+        specifier: ^18.15.3
+        version: 18.17.15
+
+  packages/platform/platform:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../../debug
+      '@leafer/layouter':
+        specifier: 1.0.0-beta.12
+        version: link:../../layouter
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/platform/web:
+    dependencies:
+      '@leafer/canvas-web':
+        specifier: 1.0.0-beta.12
+        version: link:../../canvas/canvas-web
+      '@leafer/core':
+        specifier: 1.0.0-beta.12
+        version: link:../../core
+      '@leafer/image-web':
+        specifier: 1.0.0-beta.12
+        version: link:../../image/image-web
+      '@leafer/interaction-web':
+        specifier: 1.0.0-beta.12
+        version: link:../../interaction/interaction-web
+      '@leafer/partner':
+        specifier: 1.0.0-beta.12
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/platform/worker:
+    dependencies:
+      '@leafer/canvas-worker':
+        specifier: 1.0.0-beta.12
+        version: link:../../canvas/canvas-worker
+      '@leafer/core':
+        specifier: 1.0.0-beta.12
+        version: link:../../core
+      '@leafer/image-worker':
+        specifier: 1.0.0-beta.12
+        version: link:../../image/image-worker
+      '@leafer/interaction':
+        specifier: 1.0.0-beta.12
+        version: link:../../interaction/interaction
+      '@leafer/partner':
+        specifier: 1.0.0-beta.12
+        version: link:../../partner
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../../interface
+
+  packages/plugin:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/renderer:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../data
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/image':
+        specifier: 1.0.0-beta.12
+        version: link:../image/image
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+      '@leafer/platform':
+        specifier: 1.0.0-beta.12
+        version: link:../platform/platform
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/selector:
+    dependencies:
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../list
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/task:
+    dependencies:
+      '@leafer/debug':
+        specifier: 1.0.0-beta.12
+        version: link:../debug
+      '@leafer/math':
+        specifier: 1.0.0-beta.12
+        version: link:../math
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+  packages/watcher:
+    dependencies:
+      '@leafer/data':
+        specifier: 1.0.0-beta.12
+        version: link:../data
+      '@leafer/event':
+        specifier: 1.0.0-beta.12
+        version: link:../event/event
+      '@leafer/list':
+        specifier: 1.0.0-beta.12
+        version: link:../list
+    devDependencies:
+      '@leafer/interface':
+        specifier: 1.0.0-beta.12
+        version: link:../interface
+
+packages:
+
+  /@types/node@18.17.15:
+    resolution: {integrity: sha512-2yrWpBk32tvV/JAd3HNHWuZn/VDN1P+72hWirHnvsvTGSqbANi+kSeuQR9yAHnbvaBvHDsoTdXV0Fe+iRtHLKA==}
+    dev: true
